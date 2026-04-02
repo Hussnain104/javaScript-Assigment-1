@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Assigment</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <div class="container-fluid px-5">
+            <nav class="navbar navbar-expand-lg navbar-bg bg-primary  navbar-dark ">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="#">Assigment</a>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Chapter 15-20</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+        </div>
+    </header>
+    <!-- main -->
+    <main>
+        <div class="container-fliud py-4 px-5 ">
+             <div class="row d-flex justify-content-center flex-direction-column">
+                <div class="col ">
+                    <h4 class="text-center border-bottom border-black pb-4">Chapter # 15-20 |Array: its Methods and for loops</h4>
+                </div>
+             </div>
+        </div>
+
+
+        <div class="container-fluid px-5 d-flex justify-content-between" style="display: flex; gap: 40px;">
+             <div style="width:50%;">
+                <div class="text-center"><h3>Input</h3></div>
+                <div class="seer px-5 py-5 border border-dark">
+                        <div class="input-group mb-3">
+ 
+  <input type="text" class="form-control" placeholder="Enter your text" aria-label="Example text with button addon" aria-describedby="clearInput" id="input">
+   <button class="btn btn-outline-secondary" type="button" onclick ="clearInput();" >Clear</button>
+</div>
+                </div>
+             </div>
+
+             <div style="width: 50%;">
+                <div class="text-center"><h3>Original Statement</h3></div>
+                <div class="text-center bg bg-primary  text-white py-3">
+                    <p>I love my country Pakistan.</p>
+                    <p>I like my city Faisalabad.</p>
+                    <p>I love my Homeland.</p>
+                </div>
+             </div>
+        </div>
+
+
+        <!-- buttons and output -->
+        <div class="container-fluid px-5 mt-5 mb-2 d-flex justify-content-between" style="display: flex; gap: 40px;">
+            <div style="width: 50%;">
+                <div class=" text-center"><h3>Buttons</h3></div>
+                <div class="buttonall border border-1 border-dark  text-center px-5 pt-5 pb-5">
+                      <button type="button" onclick="simpleAlert();" class="btn btn-primary mb-2" id="">Simple Alert</button>
+                     <button type="button" class="btn btn-primary mb-2" onclick="printName()" id="">Printf My Name</button>
+                     <button type="button" class="btn btn-primary mb-2" onclick="printCities();">Print All Cities</button>
+                     <button type="button" class="btn btn-primary mb-2" onclick="addCity();">Add your cities in list</button>
+                     <button type="button" class="btn btn-primary mb-2" onclick="generateTable();">Generate Table</button>
+                     <button type="button" class="btn btn-primary mb-2" onclick="lowerCase();">Convert to lowerCase</button>
+                     <button type="button" class="btn btn-primary mb-2" onclick="upperCase();">Conver to upperCase</button>
+                     <button type="button" class="btn btn-primary mb-2" onclick="capiTalize();">Convert to Captilize</button>
+                     <button type="button" class="btn btn-primary mb-2" onclick="betterFormatting();">Better Formatting</button>
+                     <button type="button" class="btn btn-primary mb-2" id="">Check your city in list</button>
+                      <button type="button" class="btn btn-primary mb-2" id="">Find this word</button>
+                     <button type="button" class="btn btn-primary mb-2" id="">Find this Replace</button>
+                </div>
+            </div>
+            <!-- output -->
+             <div style="width: 50%;">
+                <div class="">
+                    <div class="text-center"><h3>Output</h3></div>
+                     <div class="row ">
+                <div class="col border border-1 border-dark rounded-3 py-4  mx-2" >
+                    <div class="text-center" id="outPut"  style="height: 50%;"></div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <button class="btn btn-outline-dark" onclick = "clearOutput();">Clear output</button>
+            </div>
+                 </div>
+             </div>
+        </div>
+    </main>
+
+    <script src="./script.js"></script>
+</body>
+</html>
